@@ -6,9 +6,9 @@
     <meta name="theme-color" content="#FFFFFF" />
     <meta
       name="description"
-      content="Contact Indusrty — request a quote, share specifications, and connect with our engineering team."
+      content="Contact Industry — request a quote, share specifications, and connect with our engineering team."
     />
-    <title>Contact — Indusrty</title>
+    <title>Contact — Industry</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -31,10 +31,10 @@
     <header class="site-header">
       <nav class="navbar navbar-expand-lg site-nav" id="siteNav">
         <div class="container">
-          <a class="navbar-brand brand" href="./index.html" aria-label="Indusrty Home">
+          <a class="navbar-brand brand" href="./index.html" aria-label="Industry Home">
             <span class="brand-mark" aria-hidden="true"></span>
             <span class="brand-text">
-              <span class="brand-name">Indusrty</span>
+              <span class="brand-name">Industry</span>
               <span class="brand-tag">Industrial Manufacturing</span>
             </span>
           </a>
@@ -97,7 +97,12 @@
         <div class="container">
           <div class="row g-4">
             <div class="col-lg-7">
-              <form class="card-premium contact-card reveal" data-reveal id="contactForm">
+              <form class="card-premium contact-card reveal" data-reveal id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="89dc5773-0db2-4734-8660-ffbb6d09de5b">
+                <input type="hidden" name="subject" value="New Industrial Website Inquiry">
+                <input type="hidden" name="from_name" value="Industry Website">
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
                 <div class="row g-3">
                   <div class="col-md-6">
                     <label class="form-label" for="name">Full Name</label>
@@ -192,7 +197,7 @@
                   <div class="divider"></div>
                   <div class="info-row">
                     <span class="info-key">Email</span>
-                    <a class="info-link" href="mailto:sales@indusrty.com">sales@indusrty.com</a>
+                    <a class="info-link" href="mailto:sales@industry.com">sales@industry.com</a>
                   </div>
                   <div class="info-row">
                     <span class="info-key">Phone</span>
@@ -216,7 +221,7 @@
                   </div>
                   <a
                     class="btn btn-whatsapp mt-3"
-                    href="https://wa.me/919999999999?text=Hi%20Indusrty%2C%20I%27d%20like%20to%20request%20a%20quote."
+                    href="https://wa.me/919999999999?text=Hi%20Industry%2C%20I%27d%20like%20to%20request%20a%20quote."
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -232,7 +237,7 @@
 
     <a
       class="whatsapp-float"
-      href="https://wa.me/919999999999?text=Hi%20Indusrty%2C%20I%27d%20like%20to%20request%20a%20quote."
+      href="https://wa.me/919999999999?text=Hi%20Industry%2C%20I%27d%20like%20to%20request%20a%20quote."
       target="_blank"
       rel="noreferrer"
       aria-label="Chat on WhatsApp">
@@ -246,7 +251,7 @@
             <div class="footer-brand">
               <div class="brand-mark" aria-hidden="true"></div>
               <div>
-                <div class="footer-name">Indusrty</div>
+                <div class="footer-name">Industry</div>
                 <div class="footer-tag">
                   Precision engineering • Industrial fabrication • Reliable delivery
                 </div>
@@ -271,7 +276,7 @@
             <ul class="footer-links">
               <li>
                 <span class="muted">Email:</span>
-                <a href="mailto:sales@indusrty.com">sales@indusrty.com</a>
+                <a href="mailto:sales@industry.com">sales@industry.com</a>
               </li>
               <li>
                 <span class="muted">Phone:</span>
@@ -282,7 +287,7 @@
           </div>
         </div>
         <div class="footer-bottom">
-          <div>© <span id="year"></span> Indusrty. All rights reserved.</div>
+          <div>© <span id="year"></span> industry. All rights reserved.</div>
           <a class="to-top" href="#top">Back to top</a>
         </div>
       </div>
@@ -293,6 +298,57 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const form = document.getElementById("contactForm");
+      const formHint = document.getElementById("formHint");
+      
+      form.addEventListener("submit", async function(e) {
+        e.preventDefault();
+      
+        const submitBtn = form.querySelector("button[type='submit']");
+      
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = "Sending...";
+      
+        formHint.innerHTML = "";
+        formHint.className = "form-hint";
+      
+        const formData = new FormData(form);
+      
+        try {
+          const response = await fetch(form.action, {
+            method: "POST",
+            body: formData
+          });
+      
+          const data = await response.json();
+      
+          if (data.success) {
+            formHint.innerHTML = "Message sent successfully!";
+            formHint.classList.add("is-ok");
+      
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = "Send Request";
+      
+            form.reset();
+      
+          } else {
+            formHint.innerHTML = "Something went wrong.";
+            formHint.classList.add("is-bad");
+      
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = "Send Request";
+          }
+      
+        } catch (error) {
+          formHint.innerHTML = "Failed to send message.";
+          formHint.classList.add("is-bad");
+      
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = "Send Request";
+        }
+      });
+      </script>
     <script src="./js/script.js"></script>
   </body>
 </html>
