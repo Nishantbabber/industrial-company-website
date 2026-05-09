@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#FFFFFF" />
+    <meta
+      name="description"
+      content="Premium industrial manufacturing website frontend — precision engineering, fabrication, and material handling solutions."
+    />
+    <link rel="icon" href="assets/logo/He Logo .png" />
+    <title>Indusrty — Reliable Industrial Engineering Solutions</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Bootstrap 5 (optional but used for grid + utilities) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body id="top">
+    <!-- Navbar -->
+    <header class="site-header">
+      <nav class="navbar navbar-expand-lg site-nav" id="siteNav">
+        <div class="container">
+          <a class="navbar-brand brand" href="./index.html" aria-label="Indusrty Home">
+            <img src="./assets/logo/He Logo .png" alt="logo" height="55px" width="100%" object-fit="contain">
+          </a>
+
+          <button
+            class="navbar-toggler nav-toggle"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navMenu"
+            aria-controls="navMenu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+            <ul class="navbar-nav align-items-lg-center gap-lg-2">
+              <li class="nav-item">
+                <a class="nav-link nav-link-premium" href="./index.html" data-nav>Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link-premium" href="./about.html" data-nav>About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link-premium" href="./products.html" data-nav>Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link-premium" href="./projects.html" data-nav>Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link-premium" href="./contact.html" data-nav>Contact</a>
+              </li>
+              <li class="nav-item ms-lg-2">
+                <a class="btn btn-primary-premium btn-sm nav-cta" href="./contact.html">
+                  Get Quote
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="page-hero has-image" aria-label="Hero">
+        <div class="hero-media" aria-hidden="true"></div>
+        <div class="hero-overlay" aria-hidden="true"></div>
+
+        <div class="container hero-inner">
+          <div class="row align-items-center">
+            <div class="col-lg-8">
+              <div class="eyebrow reveal" data-reveal>
+                Engineering • Manufacturing • Project execution
+              </div>
+              <h1 class="hero-title reveal" data-reveal>
+                Reliable Industrial Engineering Solutions
+              </h1>
+              <p class="hero-subtitle reveal" data-reveal>
+                Precision manufacturing and engineering services built for
+                quality, reliability, and long-term performance.
+              </p>
+              <div class="hero-actions reveal" data-reveal>
+                <a class="btn btn-primary-premium btn-lg" href="./products.html">
+                  Our Products
+                </a>
+                <a class="btn btn-outline-premium btn-lg" href="./contact.html">
+                  Contact Us
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-4 mt-5 mt-lg-0">
+              <div class="card-premium stat-card reveal" data-reveal>
+                <div class="d-flex align-items-center justify-content-between">
+                  <div>
+                    <div class="kicker mb-0">Assurance</div>
+                    <div class="section-title" style="font-size:22px;margin-top:6px">
+                      Built for uptime
+                    </div>
+                  </div>
+                  <div class="stat-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none">
+                      <path
+                        d="M12 2l7 4v6c0 5-3 9-7 10-4-1-7-5-7-10V6l7-4z"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M8.5 12.5l2.2 2.2 4.8-5"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <p class="section-subtitle mb-0" style="margin-top:10px">
+                  Structured QA, documented inspections, and disciplined delivery.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Trust / Stats -->
+      <section class="section-tight" aria-label="Trust stats">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="card-premium stat-card reveal" data-reveal>
+                <div class="stat-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M12 2l3.2 6.5L22 9.5l-5 4.9 1.2 7.6L12 18.7 5.8 22l1.2-7.6-5-4.9 6.8-1L12 2z"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="stat-value mt-3">25+</div>
+                <div class="stat-label">Years experience</div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="card-premium stat-card reveal" data-reveal>
+                <div class="stat-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M4 19V7.5c0-.6.3-1.1.8-1.4l6-3.5c.7-.4 1.7-.4 2.4 0l6 3.5c.5.3.8.8.8 1.4V19"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M8 22V14h8v8"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="stat-value mt-3">500+</div>
+                <div class="stat-label">Projects delivered</div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="card-premium stat-card reveal" data-reveal>
+                <div class="stat-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M16 11a4 4 0 10-8 0"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M3.5 20a7.5 7.5 0 0117 0"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M21 7l-2 2-1-1"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="stat-value mt-3">120+</div>
+                <div class="stat-label">Industrial clients</div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="card-premium stat-card reveal" data-reveal>
+                <div class="stat-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M12 2l7 4v6c0 5-3 9-7 10-4-1-7-5-7-10V6l7-4z"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M8.5 12.5l2.2 2.2 4.8-5"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="stat-value mt-3">ISO</div>
+                <div class="stat-label">Certified processes</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About preview -->
+      <section class="section section-muted" aria-label="About preview">
+        <div class="container">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-6">
+              <div class="media-frame reveal" data-reveal>
+                <div
+                  class="media"
+                  style="background-image:url('https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=2000&q=80')"
+                  role="img"
+                  aria-label="Factory floor"
+                ></div>
+                <div class="media-caption">
+                  Disciplined manufacturing workflows aligned to documented QA.
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="section-head reveal" data-reveal>
+                <div class="kicker">Established capability</div>
+                <h2 class="section-title">Manufacturing partners for critical work.</h2>
+                <p class="section-subtitle">
+                  We support industrial clients with fabrication, material handling,
+                  and engineered assemblies—delivered with practical scheduling,
+                  traceability, and site-ready documentation.
+                </p>
+              </div>
+              <div class="mt-3 reveal" data-reveal>
+                <a class="btn btn-primary-premium" href="./about.html">About the company</a>
+                <a class="btn btn-link-premium ms-2" href="./projects.html">View projects</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Products preview -->
+      <section class="section" aria-label="Products preview">
+        <div class="container">
+          <div class="section-head reveal" data-reveal>
+            <div class="kicker">Products & services</div>
+            <h2 class="section-title">Built to operate. Designed to maintain.</h2>
+            <p class="section-subtitle">
+              Clean, serviceable designs with robust materials and practical safety considerations.
+            </p>
+          </div>
+
+          <div class="row g-4 mt-2">
+            <div class="col-12 col-md-6 col-lg-4">
+              <article class="card-premium product-card reveal" data-reveal>
+                <div class="product-media product-img-1" aria-hidden="true"></div>
+                <div class="product-body">
+                  <h3 class="product-title">Industrial Equipment</h3>
+                  <p class="product-text">
+                    Heavy-duty assemblies and plant equipment for continuous operation.
+                  </p>
+                  <div class="product-meta">
+                    <span class="pill">OEM-ready</span>
+                    <span class="pill">Traceable QA</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <article class="card-premium product-card reveal" data-reveal>
+                <div class="product-media product-img-2" aria-hidden="true"></div>
+                <div class="product-body">
+                  <h3 class="product-title">Fabrication</h3>
+                  <p class="product-text">
+                    Welding, assembly, and finishing with inspection gates and documentation.
+                  </p>
+                  <div class="product-meta">
+                    <span class="pill">WPS/QAP</span>
+                    <span class="pill">Documentation</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <article class="card-premium product-card reveal" data-reveal>
+                <div class="product-media product-img-3" aria-hidden="true"></div>
+                <div class="product-body">
+                  <h3 class="product-title">Material Handling</h3>
+                  <p class="product-text">
+                    Conveyors, chutes, platforms, and supports designed for safe throughput.
+                  </p>
+                  <div class="product-meta">
+                    <span class="pill">Safety-first</span>
+                    <span class="pill">Serviceable</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="mt-4 reveal" data-reveal>
+            <a class="btn btn-outline-premium" href="./products.html">View all products</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Industries (simple) -->
+      <section class="section section-muted" aria-label="Industries served">
+        <div class="container">
+          <div class="section-head reveal" data-reveal>
+            <div class="kicker">Industries served</div>
+            <h2 class="section-title">Industrial environments we support.</h2>
+            <p class="section-subtitle">
+              Engineering and fabrication aligned to real on-site constraints and uptime expectations.
+            </p>
+          </div>
+          <div class="row g-4 mt-2">
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card-premium feature-card reveal" data-reveal>
+                <div class="feature-title">Steel industry</div>
+                <div class="feature-text">Handling systems and structures built for heat and abrasion.</div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card-premium feature-card reveal" data-reveal>
+                <div class="feature-title">Manufacturing</div>
+                <div class="feature-text">Custom equipment and assemblies for repeatable output.</div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card-premium feature-card reveal" data-reveal>
+                <div class="feature-title">Power plants</div>
+                <div class="feature-text">Maintenance-ready systems designed for high uptime.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="cta" aria-label="Request quote">
+        <div class="container">
+          <div class="cta-card reveal" data-reveal>
+            <div class="row align-items-center g-4">
+              <div class="col-lg-8">
+                <h2 class="cta-title">Request a quote with a clear scope and timeline.</h2>
+                <p class="cta-text">
+                  Send drawings/specifications if available. We’ll respond with a structured proposal.
+                </p>
+              </div>
+              <div class="col-lg-4 text-lg-end">
+                <a class="btn btn-primary-premium btn-lg" href="./contact.html">Request a Quote</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <a
+      class="whatsapp-float"
+      href="https://wa.me/919999999999?text=Hi%20Indusrty%2C%20I%27d%20like%20to%20request%20a%20quote."
+      target="_blank"
+      rel="noreferrer"
+      aria-label="Chat on WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer class="footer" aria-label="Footer">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-5">
+            <div class="footer-brand">
+              <div class="brand-mark" aria-hidden="true"></div>
+              <div>
+                <div class="footer-name">Indusrty</div>
+                <div class="footer-tag">
+                  Precision engineering • Industrial fabrication • Reliable
+                  delivery
+                </div>
+              </div>
+            </div>
+            <p class="footer-text">
+              Premium industrial manufacturing solutions designed for performance
+              and uptime. From concept to commissioning—built with quality you
+              can audit.
+            </p>
+          </div>
+
+          <div class="col-6 col-lg-3">
+            <div class="footer-title">Quick Links</div>
+            <ul class="footer-links">
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./products.html">Products</a></li>
+              <li><a href="./projects.html">Projects</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-lg-4">
+            <div class="footer-title">Contact</div>
+            <ul class="footer-links">
+              <li>
+                <span class="muted">Email:</span>
+                <a href="mailto:sales@indusrty.com">sales@indusrty.com</a>
+              </li>
+              <li>
+                <span class="muted">Phone:</span>
+                <a href="tel:+919999999999">+91 99999 99999</a>
+              </li>
+              <li>
+                <span class="muted">Address:</span> Pune, Maharashtra, India
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div>© <span id="year"></span> Indusrty. All rights reserved.</div>
+          <a class="to-top" href="#top">Back to top</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
+

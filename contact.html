@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#FFFFFF" />
+    <meta
+      name="description"
+      content="Contact Indusrty — request a quote, share specifications, and connect with our engineering team."
+    />
+    <title>Contact — Indusrty</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body id="top">
+    <header class="site-header">
+      <nav class="navbar navbar-expand-lg site-nav" id="siteNav">
+        <div class="container">
+          <a class="navbar-brand brand" href="./index.html" aria-label="Indusrty Home">
+            <span class="brand-mark" aria-hidden="true"></span>
+            <span class="brand-text">
+              <span class="brand-name">Indusrty</span>
+              <span class="brand-tag">Industrial Manufacturing</span>
+            </span>
+          </a>
+
+          <button
+            class="navbar-toggler nav-toggle"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navMenu"
+            aria-controls="navMenu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+            <ul class="navbar-nav align-items-lg-center gap-lg-2">
+              <li class="nav-item">
+                <a class="nav-link nav-link-premium" href="./index.html" data-nav>Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link-premium" href="./about.html" data-nav>About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link-premium" href="./products.html" data-nav>Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link-premium" href="./projects.html" data-nav>Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link-premium" href="./contact.html" data-nav>Contact</a>
+              </li>
+              <li class="nav-item ms-lg-2">
+                <a class="btn btn-primary-premium btn-sm nav-cta" href="./contact.html">
+                  Get Quote
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero" aria-label="Contact header">
+        <div class="container hero-inner">
+          <div class="section-head">
+            <div class="eyebrow reveal" data-reveal>Contact</div>
+            <h1 class="hero-title reveal" data-reveal>Request a quote or share your RFQ.</h1>
+            <p class="hero-subtitle reveal" data-reveal>
+              For faster response, include drawings/specifications, material requirements, site location,
+              and expected timeline.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-muted" aria-label="Contact form and details">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-lg-7">
+              <form class="card-premium contact-card reveal" data-reveal id="contactForm">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label class="form-label" for="name">Full Name</label>
+                    <input
+                      class="form-control form-control-premium"
+                      type="text"
+                      id="name"
+                      name="name"
+                      placeholder="Your name"
+                      autocomplete="name"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label" for="company">Company</label>
+                    <input
+                      class="form-control form-control-premium"
+                      type="text"
+                      id="company"
+                      name="company"
+                      placeholder="Company name"
+                      autocomplete="organization"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label" for="email">Email</label>
+                    <input
+                      class="form-control form-control-premium"
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="you@company.com"
+                      autocomplete="email"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label" for="phone">Phone</label>
+                    <input
+                      class="form-control form-control-premium"
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      placeholder="+91 XXXXX XXXXX"
+                      autocomplete="tel"
+                    />
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label" for="service">Requirement</label>
+                    <select
+                      class="form-select form-control-premium"
+                      id="service"
+                      name="service"
+                      required
+                    >
+                      <option value="" selected disabled>Select a category</option>
+                      <option>Industrial Equipment</option>
+                      <option>Fabrication</option>
+                      <option>Conveyor Systems</option>
+                      <option>Material Handling</option>
+                      <option>Engineering Services</option>
+                      <option>Custom Build</option>
+                    </select>
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label" for="message">Message</label>
+                    <textarea
+                      class="form-control form-control-premium"
+                      id="message"
+                      name="message"
+                      rows="5"
+                      placeholder="Briefly describe scope, drawings/specs, materials, site location, and target timeline."
+                      required
+                    ></textarea>
+                  </div>
+                  <div class="col-12 d-flex flex-wrap align-items-center gap-3">
+                    <button class="btn btn-primary-premium btn-lg" type="submit">Send Request</button>
+                    <div class="form-hint" id="formHint" aria-live="polite"></div>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <div class="col-lg-5">
+              <div class="stack gap-3">
+                <div class="card-premium info-card reveal" data-reveal>
+                  <div class="info-title">Head Office</div>
+                  <div class="info-text">
+                    Plot 18, Industrial Area Phase II<br />
+                    Pune, Maharashtra, India
+                  </div>
+                  <div class="divider"></div>
+                  <div class="info-row">
+                    <span class="info-key">Email</span>
+                    <a class="info-link" href="mailto:sales@indusrty.com">sales@indusrty.com</a>
+                  </div>
+                  <div class="info-row">
+                    <span class="info-key">Phone</span>
+                    <a class="info-link" href="tel:+919999999999">+91 99999 99999</a>
+                  </div>
+                </div>
+
+                <div class="card-premium map-card reveal" data-reveal>
+                  <div class="map-placeholder">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.13275365606!2d86.20987067485756!3d22.797544324689156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f5e3002e107911%3A0xb0f34fa9cefb480c!2sBABBER%20HOUSE!5e0!3m2!1sen!2sin!4v1778330509370!5m2!1sen!2sin" 
+                    width="100%" height="100%" style="border:0;border-radius: var(--radius-lg);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+                </div>
+
+                <div class="card-premium social-card reveal" data-reveal>
+                  <div class="social-title">Connect</div>
+                  <div class="social-row">
+                    <a class="social-btn" href="#" aria-label="LinkedIn"><span aria-hidden="true">in</span></a>
+                    <a class="social-btn" href="#" aria-label="YouTube"><span aria-hidden="true">▶</span></a>
+                    <a class="social-btn" href="#" aria-label="X"><span aria-hidden="true">X</span></a>
+                  </div>
+                  <a
+                    class="btn btn-whatsapp mt-3"
+                    href="https://wa.me/919999999999?text=Hi%20Indusrty%2C%20I%27d%20like%20to%20request%20a%20quote."
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    WhatsApp for Quick Quote
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <a
+      class="whatsapp-float"
+      href="https://wa.me/919999999999?text=Hi%20Indusrty%2C%20I%27d%20like%20to%20request%20a%20quote."
+      target="_blank"
+      rel="noreferrer"
+      aria-label="Chat on WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <footer class="footer" aria-label="Footer">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-5">
+            <div class="footer-brand">
+              <div class="brand-mark" aria-hidden="true"></div>
+              <div>
+                <div class="footer-name">Indusrty</div>
+                <div class="footer-tag">
+                  Precision engineering • Industrial fabrication • Reliable delivery
+                </div>
+              </div>
+            </div>
+            <p class="footer-text">
+              Industrial manufacturing solutions designed for performance and uptime.
+              From concept to commissioning—built with quality you can verify.
+            </p>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="footer-title">Quick Links</div>
+            <ul class="footer-links">
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./products.html">Products</a></li>
+              <li><a href="./projects.html">Projects</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-4">
+            <div class="footer-title">Contact</div>
+            <ul class="footer-links">
+              <li>
+                <span class="muted">Email:</span>
+                <a href="mailto:sales@indusrty.com">sales@indusrty.com</a>
+              </li>
+              <li>
+                <span class="muted">Phone:</span>
+                <a href="tel:+919999999999">+91 99999 99999</a>
+              </li>
+              <li><span class="muted">Address:</span> Pune, Maharashtra, India</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div>© <span id="year"></span> Indusrty. All rights reserved.</div>
+          <a class="to-top" href="#top">Back to top</a>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
+
