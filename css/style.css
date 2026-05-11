@@ -618,12 +618,9 @@ a{color:inherit;text-decoration:none}
 .stack{display:flex;flex-direction:column}
 
 /* Gallery images / product images */
-.product-img-1{background-image:url("https://images.unsplash.com/photo-1581092921461-39b7c8611bbf?auto=format&fit=crop&w=1600&q=80")}
-.product-img-2{background-image:url("https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1600&q=80")}
-.product-img-3{background-image:url("https://images.unsplash.com/photo-1581092334648-b9d9f1a8bcb6?auto=format&fit=crop&w=1600&q=80")}
-.product-img-4{background-image:url("https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?auto=format&fit=crop&w=1600&q=80")}
-.product-img-5{background-image:url("https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=1600&q=80")}
-.product-img-6{background-image:url("https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1600&q=80")}
+.product-img-1{background-image:url("../assets/images/pellet.jpg")}
+.product-img-2{background-image:url("../assets/images/IMG_1088.jpg")}
+.product-img-3{background-image:url("../assets/images/distillery.jpeg")}
 
 .g1{background-image:url("https://images.unsplash.com/photo-1566837945700-30057527ade0?auto=format&fit=crop&w=1600&q=80")}
 .g2{background-image:url("https://images.unsplash.com/photo-1581092919535-7146d94bda5e?auto=format&fit=crop&w=1600&q=80")}
