@@ -1,4 +1,37 @@
 (() => {
+
+  const loadComponent = async (id, file) => {
+    const el = document.getElementById(id);
+
+    if (!el) return;
+
+    try {
+      const response = await fetch(file);
+      const html = await response.text();
+      el.innerHTML = html;
+
+      // Re-run nav active state after header loads
+      if (id === "header") {
+        const path = (location.pathname.split("/").pop() || "index.html").toLowerCase();
+
+        document.querySelectorAll("a[data-nav]").forEach((a) => {
+          const href = (a.getAttribute("href") || "").toLowerCase();
+
+          const current =
+            href.endsWith(path) ||
+            (path === "" && href.endsWith("index.html"));
+
+          a.classList.toggle("is-active", current);
+        });
+      }
+    } catch (err) {
+      console.error(`Failed to load ${file}`, err);
+    }
+  };
+
+  loadComponent("header", "./header.html");
+  loadComponent("footer", "./footer.html");
+
   const $ = (sel, root = document) => root.querySelector(sel);
   const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
 
