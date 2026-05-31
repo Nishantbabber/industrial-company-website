@@ -698,11 +698,6 @@ a{color:inherit;text-decoration:none}
   .page-hero{padding: 78px 0 48px}
   .page-hero.has-image{padding: 92px 0 62px}
   .gallery-item{grid-column: span 12}
-  .hero-media{
-    background-image:url("../assets/images/hero.jpeg");
-    background-size:contain;
-    background-repeat: no-repeat;
-  }
 }
 
 /* Reduced motion */
