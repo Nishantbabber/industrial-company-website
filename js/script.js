@@ -59,7 +59,12 @@
 
   // Scroll reveal
   const revealEls = $$("[data-reveal]");
-  const revealNow = (el) => el.classList.add("is-visible");
+  const revealNow = (el) => {
+    el.classList.add("is-visible");
+    el.addEventListener("transitionend", () => {
+      el.style.willChange = "auto";
+    }, { once: true });
+  };
 
   if ("IntersectionObserver" in window) {
     const io = new IntersectionObserver(
@@ -103,6 +108,44 @@
   // Prevent gallery dummy links from jumping
   $$("[data-gallery]").forEach((a) => a.addEventListener("click", (e) => e.preventDefault()));
 
+  // Lightbox for pellet gallery
+  const lightboxOverlay = $("#lightboxOverlay");
+  const lightboxImage = $("#lightboxImage");
+  const lightboxClose = $("#lightboxClose");
+
+  const openLightbox = (src, alt) => {
+    if (!lightboxOverlay || !lightboxImage) return;
+    lightboxImage.src = src;
+    lightboxImage.alt = alt || "Gallery image";
+    lightboxOverlay.hidden = false;
+    lightboxOverlay.classList.add("is-open");
+    document.body.style.overflow = "hidden";
+  };
+
+  const closeLightbox = () => {
+    if (!lightboxOverlay || !lightboxImage) return;
+    lightboxOverlay.classList.remove("is-open");
+    lightboxOverlay.hidden = true;
+    lightboxImage.src = "";
+    document.body.style.overflow = "";
+  };
+
+  $$("[data-lightbox]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const src = btn.getAttribute("data-lightbox");
+      const img = btn.querySelector("img");
+      openLightbox(src, img?.alt || "");
+    });
+  });
+
+  lightboxClose?.addEventListener("click", closeLightbox);
+  lightboxOverlay?.addEventListener("click", (e) => {
+    if (e.target === lightboxOverlay) closeLightbox();
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && lightboxOverlay?.classList.contains("is-open")) closeLightbox();
+  });
+
   // Contact form (frontend-only, premium feedback)
   const form = $("#contactForm");
   const hint = $("#formHint");
@@ -123,7 +166,13 @@
     });
   }
 
-  // On initial load with hash
+  // Lazy-load below-fold images without explicit loading attribute
+  if ("loading" in HTMLImageElement.prototype) {
+    $$("main img:not([loading])").forEach((img, i) => {
+      if (i > 0) img.loading = "lazy";
+      img.decoding = "async";
+    });
+  }
   if (location.hash) {
     setTimeout(() => scrollToHash(location.hash), 50);
   }
