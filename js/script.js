@@ -160,7 +160,7 @@
         const fd = new FormData(form);
         const name = String(fd.get("name") || "").trim().split(" ")[0] || "there";
         hint.classList.add("is-ok");
-        hint.textContent = `Thanks, ${name}. We received your request — our team will reach out shortly.`;
+        hint.textContent = `Thanks, ${name}. We received your request  our team will reach out shortly.`;
         form.reset();
       }, 650);
     });

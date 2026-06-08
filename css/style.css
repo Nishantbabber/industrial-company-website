@@ -277,7 +277,7 @@ a{color:inherit;text-decoration:none}
 .nav-toggle{border:1px solid rgba(30,41,59,.18)}
 .navbar-toggler-icon{filter: none; opacity:.75}
 
-/* Buttons — unified premium system */
+/* Buttons  unified premium system */
 .btn{
   border-radius:12px;
   font-weight:700;
@@ -355,7 +355,7 @@ a{color:inherit;text-decoration:none}
 }
 .btn-link-premium:hover{text-decoration:underline}
 
-/* Page header / hero — unified system */
+/* Page header / hero  unified system */
 .page-hero{
   position:relative;
   padding: var(--hero-pad-y) 0 clamp(56px, 8vh, 72px);
@@ -397,7 +397,6 @@ a{color:inherit;text-decoration:none}
   font-size:clamp(32px, 4.2vw, 52px);
   line-height:1.14;
   letter-spacing:-.4px;
-  max-width:18ch;
 }
 .page-hero:not(.has-image) .hero-title{
   color:var(--text);
@@ -406,7 +405,6 @@ a{color:inherit;text-decoration:none}
 }
 .page-hero.has-image .hero-subtitle{
   color:rgba(255,255,255,.84);
-  max-width:var(--hero-subtitle-max);
   margin-top:16px;
   font-size:clamp(15px, 1.7vw, 17px);
   line-height:1.75;
@@ -463,7 +461,6 @@ a{color:inherit;text-decoration:none}
 }
 .section-tight{padding: 56px 0}
 .section-muted{background: var(--gray-50); border-top:1px solid rgba(30,41,59,.06); border-bottom:1px solid rgba(30,41,59,.06)}
-.section-head{max-width: 860px}
 .kicker{
   color: rgba(30,41,59,.70);
   font-size:12px;
@@ -486,7 +483,7 @@ a{color:inherit;text-decoration:none}
   font-size:15px;
 }
 
-/* Cards — unified design language */
+/* Cards  unified design language */
 .card-premium{
   height:100%;
   border-radius:var(--radius-lg);
@@ -813,7 +810,7 @@ a{color:inherit;text-decoration:none}
 .to-top{color: var(--accent-ink);font-weight:800}
 .to-top:hover{text-decoration:underline}
 
-/* Reveal — unified animation system */
+/* Reveal  unified animation system */
 .reveal{
   opacity:0;
   transform:translateY(12px);
@@ -831,7 +828,7 @@ a{color:inherit;text-decoration:none}
 
 /* Gallery images / product images */
 .product-img-1{background-image:url("../assets/images/pellet.png")}
-.product-img-2{background-image:url("../assets/images/IMG_1088.jpg")}
+.product-img-2{background-image:url("../assets/images/1088.jpeg")}
 .product-img-3{background-image:url("../assets/images/hero.jpeg")}
 .product-img-4{background-image:url("../assets/images/pollution-control.webp")}
 
@@ -965,7 +962,7 @@ a{
   cursor:pointer;
 }
 
-/* ── Pellet Plant Page — aligned with site system ── */
+/* ── Pellet Plant Page  aligned with site system ── */
 .pellet-hero-stats-mobile{
   display:grid !important;
   grid-template-columns:repeat(4, minmax(0, 1fr));
