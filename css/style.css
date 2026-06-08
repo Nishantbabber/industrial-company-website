@@ -401,7 +401,6 @@ a{color:inherit;text-decoration:none}
 .page-hero:not(.has-image) .hero-title{
   color:var(--text);
   font-size:clamp(30px, 4vw, 46px);
-  max-width:22ch;
 }
 .page-hero.has-image .hero-subtitle{
   color:rgba(255,255,255,.84);
@@ -411,7 +410,6 @@ a{color:inherit;text-decoration:none}
 }
 .page-hero:not(.has-image) .hero-subtitle{
   color:var(--text-2);
-  max-width:var(--hero-subtitle-max);
   margin-top:16px;
 }
 .hero-actions{
